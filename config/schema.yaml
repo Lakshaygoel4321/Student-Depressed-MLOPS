@@ -39,3 +39,30 @@ numerical_columns:
   - Work/Study Hours
   - Financial Stress
   - Depression
+
+drop_columns:
+  - id
+  - Work Pressure
+  - Job Satisfaction
+
+onehotEncoder:
+  - City
+  - Degree
+  - Profession
+  - Sleep Duration
+
+ordinalEncoder:
+  - Gender
+  - Dietary Habits
+  - Have you ever had suicidal thoughts ?
+  - Family History of Mental Illness
+
+scaler_columns:
+  - Age
+  - Academic Pressure
+  - CGPA
+  - Study Satisfaction
+  - Work/Study Hours
+  - Financial Stress
+
+

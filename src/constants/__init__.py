@@ -16,7 +16,7 @@ TEST_FILE_NAME: str = "test.csv"
 FILE_NAME:str = 'student.csv'
 MODEL_FILE_NAME = 'model.pkl'
 
-TARGET_COLUMN = ""
+TARGET_COLUMN = "Depression"
 PROCESSING_OBJ_FILE = "preprocessor.pkl"
 SCHEMA_FILE_PATH = os.path.join("config","schema.yaml")
 
@@ -30,5 +30,10 @@ DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.2
 DATA_VALIDATION_DIR_NAME: str = "data_validation"
 DATA_VALIDATION_DRIFT_REPORT_DIR: str = "drift_report"
 DATA_VALIDATION_DRIFT_REPORT_FILE_NAME: str = "report.yaml"
+
+
+DATA_TRANSFORMATION_DIR_NAME: str = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR: str = "transformed"
+DATA_TRANSFORMATION_TRAMSFORMED_OBJECT_DIR: str = "transformed_object"
 
 
