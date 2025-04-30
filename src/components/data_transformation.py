@@ -3,6 +3,7 @@ import numpy as np
 import sys
 import pandas as pd
 import numpy as np
+import pickle 
 
 from src.logger import logging
 from src.exception import USvisaException
@@ -186,6 +187,9 @@ class DataTransformation:
                 
                 logging.info("Applying on the preprocessor object on the testing")
                 input_feature_test = preprocessor.transform(input_feature_test_df)
+
+                with open('preprocessor.pkl','wb') as f:
+                    pickle.dump(preprocessor,f)
 
                 logging.info("Created train array and test array")
                 train_array = np.c_[
