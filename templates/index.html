@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Depression Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Student Depression Predictor</h2>
+
+    <form method="POST">
+
+        <div class="form-group">
+            <label for="Age">Age</label>
+            <input type="number" id="Age" name="Age" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Gender">Gender</label>
+            <select name="Gender" id="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="City">City</label>
+            <select name="City" id="City" required>
+                <option value="">--Select--</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Srinagar">Srinagar</option>
+                <option value="Varanasi">Varanasi</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Pune">Pune</option>
+                <option value="Thane">Thane</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Nashik">Nashik</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Kalyan">Kalyan</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Indore">Indore</option>
+                <option value="Surat">Surat</option>
+                <option value="Ludhiana">Ludhiana</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Meerut">Meerut</option>
+                <option value="Agra">Agra</option>
+                <option value="Ghaziabad">Ghaziabad</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Vasai-Virar">Vasai-Virar</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Patna">Patna</option>
+                <option value="Other_Citys">Other_Citys</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Profession">Profession</label>
+            <select name="Profession" id="Profession" required>
+                <option value="">--Select--</option>
+                <option value="Student">Student</option>
+                <option value="Civil Engineer">Civil Engineer</option>
+                <option value="Architect">Architect</option>
+                <option value="UX/UI Designer">UX/UI Designer</option>
+                <option value="Digital Marketer">Digital Marketer</option>
+                <option value="Content Writer">Content Writer</option>
+                <option value="Educational Consultant">Educational Consultant</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Manager">Manager</option>
+                <option value="Chef">Chef</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Lawyer">Lawyer</option>
+                <option value="Entrepreneur">Entrepreneur</option>
+                <option value="Pharmacist">Pharmacist</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="AcademicPressure">Academic Pressure (0–5)</label>
+            <input type="number" id="AcademicPressure" name="Academic Pressure" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="CGPA">CGPA</label>
+            <input type="number" name="CGPA" id="CGPA" step="0.01" required>
+        </div>
+
+        <div class="form-group">
+            <label for="StudySatisfaction">Study Satisfaction (0–5)</label>
+            <input type="number" id="StudySatisfaction" name="Study Satisfaction" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="SleepDuration">Sleep Duration</label>
+            <select name="Sleep Duration" id="SleepDuration" required>
+                <option value="5-6 hours">5-6 hours</option>
+                <option value="Less than 5 hours">Less than 5 hours</option>
+                <option value="7-8 hours">7-8 hours</option>
+                <option value="More than 8 hours">More than 8 hours</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="DietaryHabits">Dietary Habits</label>
+            <select name="Dietary Habits" id="DietaryHabits" required>
+                <option value="Healthy">Healthy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Unhealthy">Unhealthy</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Degree">Degree</label>
+            <select name="Degree" id="Degree" required>
+                <option value="">--Select--</option>
+                <option value="B.Pharm">B.Pharm</option>
+                <option value="BSc">BSc</option>
+                <option value="BA">BA</option>
+                <option value="BCA">BCA</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="PhD">PhD</option>
+                <option value="Class 12">Class 12</option>
+                <option value="B.Ed">B.Ed</option>
+                <option value="LLB">LLB</option>
+                <option value="BE">BE</option>
+                <option value="M.Ed">M.Ed</option>
+                <option value="MSc">MSc</option>
+                <option value="BHM">BHM</option>
+                <option value="M.Pharm">M.Pharm</option>
+                <option value="MCA">MCA</option>
+                <option value="MA">MA</option>
+                <option value="B.Com">B.Com</option>
+                <option value="MD">MD</option>
+                <option value="MBA">MBA</option>
+                <option value="MBBS">MBBS</option>
+                <option value="M.Com">M.Com</option>
+                <option value="B.Arch">B.Arch</option>
+                <option value="Others Degree">Others Degree</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BBA">BBA</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="SuicidalThoughts">Have you ever had suicidal thoughts?</label>
+            <select name="Have you ever had suicidal thoughts ?" id="SuicidalThoughts" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="WorkStudyHours">Work/Study Hours</label>
+            <input type="number" id="WorkStudyHours" name="Work/Study Hours" step="0.1" required>
+        </div>
+
+        <div class="form-group">
+            <label for="FinancialStress">Financial Stress (1–5)</label>
+            <select name="Financial Stress" id="FinancialStress" required>
+                <option value="1.0">1.0</option>
+                <option value="2.0">2.0</option>
+                <option value="3.0">3.0</option>
+                <option value="4.0">4.0</option>
+                <option value="5.0">5.0</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="FamilyHistory">Family History of Mental Illness</label>
+            <select name="Family History of Mental Illness" id="FamilyHistory" required>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        </div>
+
+        <button type="submit">Predict</button>
+
+        {% if prediction %}
+        <div class="result">
+            {{ prediction }}
+        </div>
+        {% endif %}
+
+    </form>
+</div>
+
+</body>
+</html>

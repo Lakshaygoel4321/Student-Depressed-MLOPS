@@ -56,7 +56,7 @@ class DataTransformation:
 
             onehot = self.schema_path['onehotEncoder']
 
-            ordinal = self.schema_path['ordinalEncoder']
+            # ordinal = self.schema_path['ordinalEncoder']
 
             num_columns = self.schema_path['scaler_columns']
             
@@ -64,7 +64,7 @@ class DataTransformation:
 
             preprocessor = ColumnTransformer([
                 ('onehotencoder',encoder,onehot),
-                ('Ordinalencoder',ordinal_encoder,ordinal),
+                # ('Ordinalencoder',ordinal_encoder,ordinal),
                 ("StandardScaler",scaler,num_columns)
 
             ])
@@ -187,6 +187,7 @@ class DataTransformation:
                 
                 logging.info("Applying on the preprocessor object on the testing")
                 input_feature_test = preprocessor.transform(input_feature_test_df)
+
 
                 with open('preprocessor.pkl','wb') as f:
                     pickle.dump(preprocessor,f)

@@ -50,12 +50,11 @@ onehotEncoder:
   - Degree
   - Profession
   - Sleep Duration
-
-ordinalEncoder:
   - Gender
   - Dietary Habits
   - Have you ever had suicidal thoughts ?
   - Family History of Mental Illness
+  - Financial Stress
 
 scaler_columns:
   - Age
@@ -63,6 +62,6 @@ scaler_columns:
   - CGPA
   - Study Satisfaction
   - Work/Study Hours
-  - Financial Stress
+
 
 

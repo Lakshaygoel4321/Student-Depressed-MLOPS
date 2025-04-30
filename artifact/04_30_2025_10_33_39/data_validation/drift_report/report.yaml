@@ -1,0 +1,1079 @@
+data_drift:
+  data:
+    cat_feature_names:
+    - City
+    - Degree
+    - Dietary Habits
+    - Family History of Mental Illness
+    - Financial Stress
+    - Gender
+    - Have you ever had suicidal thoughts ?
+    - Profession
+    - Sleep Duration
+    datetime_feature_names: []
+    metrics:
+      Academic Pressure:
+        current_small_hist:
+          x:
+          - 0.0
+          - 0.5
+          - 1.0
+          - 1.5
+          - 2.0
+          - 2.5
+          - 3.0
+          - 3.5
+          - 4.0
+          - 4.5
+          - 5.0
+          y:
+          - 0.0007167174341515857
+          - 0.0
+          - 0.35298333631965595
+          - 0.0
+          - 0.3185808994803799
+          - 0.0
+          - 0.5249955205160366
+          - 0.0
+          - 0.3608672280953234
+          - 0.4418562981544526
+        drift_detected: false
+        drift_score: 0.02922915239964939
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 0.5
+          - 1.0
+          - 1.5
+          - 2.0
+          - 2.5
+          - 3.0
+          - 3.5
+          - 4.0
+          - 4.5
+          - 5.0
+          y:
+          - 0.0006272401433691756
+          - 0.0
+          - 0.3419354838709677
+          - 0.0
+          - 0.2947132616487455
+          - 0.0
+          - 0.5373655913978495
+          - 0.0
+          - 0.37168458781362007
+          - 0.453673835125448
+        stattest_name: Wasserstein distance (normed)
+      Age:
+        current_small_hist:
+          x:
+          - 18.0
+          - 22.0
+          - 26.0
+          - 30.0
+          - 34.0
+          - 38.0
+          - 42.0
+          - 46.0
+          - 50.0
+          - 54.0
+          - 58.0
+          y:
+          - 0.06320551872424297
+          - 0.061010571582153734
+          - 0.06118975094069163
+          - 0.05169324493818312
+          - 0.012587349937287225
+          - 4.479483963447411e-05
+          - 8.958967926894822e-05
+          - 8.958967926894822e-05
+          - 4.479483963447411e-05
+          - 4.479483963447411e-05
+        drift_detected: false
+        drift_score: 0.010007005214316142
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 18.0
+          - 22.1
+          - 26.2
+          - 30.299999999999997
+          - 34.4
+          - 38.5
+          - 42.599999999999994
+          - 46.699999999999996
+          - 50.8
+          - 54.9
+          - 59.0
+          y:
+          - 0.07247136987498905
+          - 0.05989378442171521
+          - 0.05830929277034709
+          - 0.05282367339802428
+          - 0.00024040562986275019
+          - 6.556517178075016e-05
+          - 2.1855057260250015e-05
+          - 4.371011452050003e-05
+          - 1.0927528630125008e-05
+          - 2.1855057260250015e-05
+        stattest_name: Wasserstein distance (normed)
+      CGPA:
+        current_small_hist:
+          x:
+          - 0.0
+          - 1.0
+          - 2.0
+          - 3.0
+          - 4.0
+          - 5.0
+          - 6.0
+          - 7.0
+          - 8.0
+          - 9.0
+          - 10.0
+          y:
+          - 0.00035835871707579287
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.19888908797706503
+          - 0.15445260705966674
+          - 0.20032252284536822
+          - 0.22325748073821897
+          - 0.22271994266260528
+        drift_detected: false
+        drift_score: 0.02050547795790237
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 1.0
+          - 2.0
+          - 3.0
+          - 4.0
+          - 5.0
+          - 6.0
+          - 7.0
+          - 8.0
+          - 9.0
+          - 10.0
+          y:
+          - 0.0003136200716845878
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.19233870967741937
+          - 0.15452508960573477
+          - 0.198252688172043
+          - 0.2310483870967742
+          - 0.22352150537634408
+        stattest_name: Wasserstein distance (normed)
+      City:
+        current_small_hist:
+          x:
+          - '''Less Delhi'''
+          - '''Less than 5 Kalyan'''
+          - '3.0'
+          - Agra
+          - Ahmedabad
+          - Bangalore
+          - Bhavna
+          - Bhopal
+          - Chennai
+          - City
+          - Delhi
+          - Faridabad
+          - Gaurav
+          - Ghaziabad
+          - Harsh
+          - Harsha
+          - Hyderabad
+          - Indore
+          - Jaipur
+          - Kalyan
+          - Kanpur
+          - Khaziabad
+          - Kibara
+          - Kolkata
+          - Lucknow
+          - Ludhiana
+          - M.Com
+          - M.Tech
+          - ME
+          - Meerut
+          - Mihir
+          - Mira
+          - Mumbai
+          - Nagpur
+          - Nalini
+          - Nalyan
+          - Nandini
+          - Nashik
+          - Patna
+          - Pune
+          - Rajkot
+          - Rashi
+          - Reyansh
+          - Saanvi
+          - Srinagar
+          - Surat
+          - Thane
+          - Vaanya
+          - Vadodara
+          - Varanasi
+          - Vasai-Virar
+          - Visakhapatnam
+          y:
+          - 1
+          - 0
+          - 0
+          - 205
+          - 200
+          - 154
+          - 0
+          - 186
+          - 188
+          - 0
+          - 158
+          - 95
+          - 0
+          - 156
+          - 0
+          - 0
+          - 262
+          - 117
+          - 207
+          - 321
+          - 115
+          - 0
+          - 1
+          - 211
+          - 230
+          - 204
+          - 0
+          - 0
+          - 0
+          - 155
+          - 0
+          - 0
+          - 151
+          - 138
+          - 0
+          - 0
+          - 0
+          - 94
+          - 209
+          - 190
+          - 156
+          - 0
+          - 0
+          - 0
+          - 308
+          - 227
+          - 227
+          - 0
+          - 127
+          - 142
+          - 256
+          - 190
+        drift_detected: false
+        drift_score: 0.03286907614664202
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - '''Less Delhi'''
+          - '''Less than 5 Kalyan'''
+          - '3.0'
+          - Agra
+          - Ahmedabad
+          - Bangalore
+          - Bhavna
+          - Bhopal
+          - Chennai
+          - City
+          - Delhi
+          - Faridabad
+          - Gaurav
+          - Ghaziabad
+          - Harsh
+          - Harsha
+          - Hyderabad
+          - Indore
+          - Jaipur
+          - Kalyan
+          - Kanpur
+          - Khaziabad
+          - Kibara
+          - Kolkata
+          - Lucknow
+          - Ludhiana
+          - M.Com
+          - M.Tech
+          - ME
+          - Meerut
+          - Mihir
+          - Mira
+          - Mumbai
+          - Nagpur
+          - Nalini
+          - Nalyan
+          - Nandini
+          - Nashik
+          - Patna
+          - Pune
+          - Rajkot
+          - Rashi
+          - Reyansh
+          - Saanvi
+          - Srinagar
+          - Surat
+          - Thane
+          - Vaanya
+          - Vadodara
+          - Varanasi
+          - Vasai-Virar
+          - Visakhapatnam
+          y:
+          - 0
+          - 1
+          - 1
+          - 889
+          - 751
+          - 613
+          - 2
+          - 748
+          - 697
+          - 2
+          - 610
+          - 366
+          - 1
+          - 589
+          - 1
+          - 2
+          - 1078
+          - 526
+          - 829
+          - 1249
+          - 494
+          - 1
+          - 0
+          - 855
+          - 925
+          - 907
+          - 1
+          - 1
+          - 1
+          - 670
+          - 1
+          - 1
+          - 548
+          - 513
+          - 1
+          - 1
+          - 1
+          - 453
+          - 798
+          - 778
+          - 660
+          - 1
+          - 1
+          - 2
+          - 1064
+          - 851
+          - 912
+          - 1
+          - 567
+          - 543
+          - 1034
+          - 779
+        stattest_name: Jensen-Shannon distance
+      Degree:
+        current_small_hist:
+          x:
+          - '''Class 12'''
+          - B.Arch
+          - B.Com
+          - B.Ed
+          - B.Pharm
+          - B.Tech
+          - BA
+          - BBA
+          - BCA
+          - BE
+          - BHM
+          - BSc
+          - LLB
+          - LLM
+          - M.Com
+          - M.Ed
+          - M.Pharm
+          - M.Tech
+          - MA
+          - MBA
+          - MBBS
+          - MCA
+          - MD
+          - ME
+          - MHM
+          - MSc
+          - Others
+          - PhD
+          y:
+          - 1204
+          - 271
+          - 306
+          - 372
+          - 168
+          - 217
+          - 132
+          - 153
+          - 257
+          - 130
+          - 170
+          - 180
+          - 139
+          - 96
+          - 147
+          - 168
+          - 127
+          - 223
+          - 108
+          - 128
+          - 150
+          - 198
+          - 102
+          - 53
+          - 33
+          - 240
+          - 8
+          - 101
+        drift_detected: false
+        drift_score: 0.02982561988645285
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - '''Class 12'''
+          - B.Arch
+          - B.Com
+          - B.Ed
+          - B.Pharm
+          - B.Tech
+          - BA
+          - BBA
+          - BCA
+          - BE
+          - BHM
+          - BSc
+          - LLB
+          - LLM
+          - M.Com
+          - M.Ed
+          - M.Pharm
+          - M.Tech
+          - MA
+          - MBA
+          - MBBS
+          - MCA
+          - MD
+          - ME
+          - MHM
+          - MSc
+          - Others
+          - PhD
+          y:
+          - 4876
+          - 1207
+          - 1200
+          - 1495
+          - 642
+          - 935
+          - 468
+          - 543
+          - 1176
+          - 483
+          - 755
+          - 708
+          - 532
+          - 386
+          - 587
+          - 653
+          - 455
+          - 799
+          - 436
+          - 434
+          - 546
+          - 846
+          - 470
+          - 132
+          - 158
+          - 950
+          - 27
+          - 421
+        stattest_name: Jensen-Shannon distance
+      Depression:
+        current_small_hist:
+          x:
+          - 0.0
+          - 0.1
+          - 0.2
+          - 0.30000000000000004
+          - 0.4
+          - 0.5
+          - 0.6000000000000001
+          - 0.7000000000000001
+          - 0.8
+          - 0.9
+          - 1.0
+          y:
+          - 4.148002150152302
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 5.851997849847699
+        drift_detected: false
+        drift_score: 0.0002681794120983175
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 0.1
+          - 0.2
+          - 0.30000000000000004
+          - 0.4
+          - 0.5
+          - 0.6000000000000001
+          - 0.7000000000000001
+          - 0.8
+          - 0.9
+          - 1.0
+          y:
+          - 4.14426523297491
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 5.8557347670250905
+        stattest_name: Jensen-Shannon distance
+      Dietary Habits:
+        current_small_hist:
+          x:
+          - Healthy
+          - Moderate
+          - Others
+          - Unhealthy
+          y:
+          - 1484
+          - 1984
+          - 3
+          - 2110
+        drift_detected: false
+        drift_score: 0.009524709668552369
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Healthy
+          - Moderate
+          - Others
+          - Unhealthy
+          y:
+          - 6167
+          - 7937
+          - 9
+          - 8207
+        stattest_name: Jensen-Shannon distance
+      Family History of Mental Illness:
+        current_small_hist:
+          x:
+          - 'No'
+          - 'Yes'
+          y:
+          - 2899
+          - 2682
+        drift_detected: false
+        drift_score: 0.0030089847403337224
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - 'No'
+          - 'Yes'
+          y:
+          - 11499
+          - 10821
+        stattest_name: Jensen-Shannon distance
+      Financial Stress:
+        current_small_hist:
+          x:
+          - '1.0'
+          - '2.0'
+          - '3.0'
+          - '4.0'
+          - '5.0'
+          - '?'
+          y:
+          - 1050
+          - 1010
+          - 1024
+          - 1123
+          - 1373
+          - 1
+        drift_detected: false
+        drift_score: 0.010004592534927042
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - '1.0'
+          - '2.0'
+          - '3.0'
+          - '4.0'
+          - '5.0'
+          - '?'
+          y:
+          - 4071
+          - 4051
+          - 4202
+          - 4652
+          - 5342
+          - 2
+        stattest_name: Jensen-Shannon distance
+      Gender:
+        current_small_hist:
+          x:
+          - Female
+          - Male
+          y:
+          - 2456
+          - 3125
+        drift_detected: false
+        drift_score: 0.0024165671529670168
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Female
+          - Male
+          y:
+          - 9898
+          - 12422
+        stattest_name: Jensen-Shannon distance
+      Have you ever had suicidal thoughts ?:
+        current_small_hist:
+          x:
+          - 'No'
+          - 'Yes'
+          y:
+          - 2062
+          - 3519
+        drift_detected: false
+        drift_score: 0.0020863769080631638
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - 'No'
+          - 'Yes'
+          y:
+          - 8183
+          - 14137
+        stattest_name: Jensen-Shannon distance
+      Job Satisfaction:
+        current_small_hist:
+          x:
+          - 0.0
+          - 0.3
+          - 0.6
+          - 0.8999999999999999
+          - 1.2
+          - 1.5
+          - 1.7999999999999998
+          - 2.1
+          - 2.4
+          - 2.6999999999999997
+          - 3.0
+          y:
+          - 3.3321388042764144
+          - 0.0
+          - 0.0
+          - 0.0005972645284596547
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0005972645284596542
+        drift_detected: false
+        drift_score: 0.012701123483830725
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 0.4
+          - 0.8
+          - 1.2000000000000002
+          - 1.6
+          - 2.0
+          - 2.4000000000000004
+          - 2.8000000000000003
+          - 3.2
+          - 3.6
+          - 4.0
+          y:
+          - 2.4993279569892475
+          - 0.0
+          - 0.00011200716845878132
+          - 0.0
+          - 0.0
+          - 0.0003360215053763438
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.00022401433691756275
+        stattest_name: Jensen-Shannon distance
+      Profession:
+        current_small_hist:
+          x:
+          - '''Civil Engineer'''
+          - '''Content Writer'''
+          - '''Digital Marketer'''
+          - '''Educational Consultant'''
+          - '''UX/UI Designer'''
+          - Architect
+          - Chef
+          - Doctor
+          - Entrepreneur
+          - Lawyer
+          - Manager
+          - Pharmacist
+          - Student
+          - Teacher
+          y:
+          - 1
+          - 2
+          - 0
+          - 0
+          - 0
+          - 3
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 1
+          - 5573
+          - 1
+        drift_detected: false
+        drift_score: 0.02070568106025587
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - '''Civil Engineer'''
+          - '''Content Writer'''
+          - '''Digital Marketer'''
+          - '''Educational Consultant'''
+          - '''UX/UI Designer'''
+          - Architect
+          - Chef
+          - Doctor
+          - Entrepreneur
+          - Lawyer
+          - Manager
+          - Pharmacist
+          - Student
+          - Teacher
+          y:
+          - 0
+          - 0
+          - 3
+          - 1
+          - 1
+          - 5
+          - 2
+          - 2
+          - 1
+          - 1
+          - 1
+          - 1
+          - 22297
+          - 5
+        stattest_name: Jensen-Shannon distance
+      Sleep Duration:
+        current_small_hist:
+          x:
+          - '''5-6 hours'''
+          - '''7-8 hours'''
+          - '''Less than 5 hours'''
+          - '''More than 8 hours'''
+          - Others
+          y:
+          - 1243
+          - 1472
+          - 1611
+          - 1249
+          - 6
+        drift_detected: false
+        drift_score: 0.012191757177059427
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - '''5-6 hours'''
+          - '''7-8 hours'''
+          - '''Less than 5 hours'''
+          - '''More than 8 hours'''
+          - Others
+          y:
+          - 4940
+          - 5874
+          - 6699
+          - 4795
+          - 12
+        stattest_name: Jensen-Shannon distance
+      Study Satisfaction:
+        current_small_hist:
+          x:
+          - 0.0
+          - 0.5
+          - 1.0
+          - 1.5
+          - 2.0
+          - 2.5
+          - 3.0
+          - 3.5
+          - 4.0
+          - 4.5
+          - 5.0
+          y:
+          - 0.0010750761512273786
+          - 0.0
+          - 0.39885325210535744
+          - 0.0
+          - 0.40458699157857014
+          - 0.0
+          - 0.42035477512990505
+          - 0.0
+          - 0.46622469091560653
+          - 0.30890521411933347
+        drift_detected: false
+        drift_score: 0.011318579073536885
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 0.5
+          - 1.0
+          - 1.5
+          - 2.0
+          - 2.5
+          - 3.0
+          - 3.5
+          - 4.0
+          - 4.5
+          - 5.0
+          y:
+          - 0.0006272401433691756
+          - 0.0
+          - 0.38870967741935486
+          - 0.0
+          - 0.42195340501792117
+          - 0.0
+          - 0.4164874551971326
+          - 0.0
+          - 0.4532258064516129
+          - 0.31899641577060933
+        stattest_name: Wasserstein distance (normed)
+      Work Pressure:
+        current_small_hist:
+          x:
+          - -0.5
+          - -0.4
+          - -0.3
+          - -0.19999999999999996
+          - -0.09999999999999998
+          - 0.0
+          - 0.10000000000000009
+          - 0.20000000000000007
+          - 0.30000000000000004
+          - 0.4
+          - 0.5
+          y:
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 9.999999999999991
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+        drift_detected: false
+        drift_score: 0.0068253007386183005
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 0.5
+          - 1.0
+          - 1.5
+          - 2.0
+          - 2.5
+          - 3.0
+          - 3.5
+          - 4.0
+          - 4.5
+          - 5.0
+          y:
+          - 1.999731182795699
+          - 0.0
+          - 0.0
+          - 0.0
+          - 8.960573476702509e-05
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.00017921146953405018
+        stattest_name: Jensen-Shannon distance
+      Work/Study Hours:
+        current_small_hist:
+          x:
+          - 0.0
+          - 1.2
+          - 2.4
+          - 3.5999999999999996
+          - 4.8
+          - 6.0
+          - 7.199999999999999
+          - 8.4
+          - 9.6
+          - 10.799999999999999
+          - 12.0
+          y:
+          - 0.08600609209819028
+          - 0.046586633219853076
+          - 0.044944155766589035
+          - 0.05151406557964521
+          - 0.040016723406796864
+          - 0.1276652929582513
+          - 0.07092516275458394
+          - 0.06077166577076991
+          - 0.11930358955981611
+          - 0.18559995221883754
+        drift_detected: false
+        drift_score: 0.015633702677372262
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 1.2
+          - 2.4
+          - 3.5999999999999996
+          - 4.8
+          - 6.0
+          - 7.199999999999999
+          - 8.4
+          - 9.6
+          - 10.799999999999999
+          - 12.0
+          y:
+          - 0.08490143369175628
+          - 0.04771505376344086
+          - 0.043645459976105146
+          - 0.04737903225806451
+          - 0.0383811230585424
+          - 0.1266801075268818
+          - 0.0759408602150537
+          - 0.06044653524492238
+          - 0.12824820788530475
+          - 0.1799955197132615
+        stattest_name: Wasserstein distance (normed)
+      dataset_drift: false
+      id:
+        current_small_hist:
+          x:
+          - 52.0
+          - 14115.4
+          - 28178.8
+          - 42242.2
+          - 56305.6
+          - 70369.0
+          - 84432.4
+          - 98495.8
+          - 112559.2
+          - 126622.59999999999
+          - 140686.0
+          y:
+          - 7.083900290617518e-06
+          - 7.364198503555622e-06
+          - 7.08390029061752e-06
+          - 7.04567780703505e-06
+          - 6.956492012009289e-06
+          - 6.9055287005660015e-06
+          - 7.364198503555617e-06
+          - 7.071159462756699e-06
+          - 7.415161814998917e-06
+          - 6.816342905540235e-06
+        drift_detected: false
+        drift_score: 0.009214969800358243
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 2.0
+          - 14071.7
+          - 28141.4
+          - 42211.100000000006
+          - 56280.8
+          - 70350.5
+          - 84420.20000000001
+          - 98489.90000000001
+          - 112559.6
+          - 126629.3
+          - 140699.0
+          y:
+          - 7.024678951792055e-06
+          - 7.148868652209048e-06
+          - 7.1743434625509945e-06
+          - 6.9227797104242664e-06
+          - 7.091550328939669e-06
+          - 7.225293083234886e-06
+          - 6.894120548789575e-06
+          - 7.346298432359145e-06
+          - 7.126578193159847e-06
+          - 7.12020949057436e-06
+        stattest_name: Wasserstein distance (normed)
+      n_drifted_features: 0
+      n_features: 18
+      share_drifted_features: 0.0
+    num_feature_names:
+    - Academic Pressure
+    - Age
+    - CGPA
+    - Depression
+    - Job Satisfaction
+    - Study Satisfaction
+    - Work Pressure
+    - Work/Study Hours
+    - id
+    options:
+      confidence: null
+      drift_share: 0.5
+      nbinsx: 10
+      xbins: null
+    target_names: null
+    text_feature_names: []
+    utility_columns:
+      date: null
+      id: null
+      prediction: null
+      target: null
+  datetime: '2025-04-30 10:33:47.517145'
+  name: data_drift
+timestamp: '2025-04-30 10:33:47.518138'
