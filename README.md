@@ -1,7 +1,3 @@
-Thanks! Based on your update, here's the refined GitHub README that **includes the `model_evaluation`** phase but **excludes the `model_deployment` and `model_pusher.py`** files, keeping the CI/CD and Docker containerization for local or cloud-based serving:
-
----
-
 # 🧠 Student Depression Prediction - MLOps Project
 
 An end-to-end MLOps pipeline for predicting student depression using structured data and modern MLOps practices. The pipeline integrates data ingestion, validation, transformation, model training, evaluation, and containerization — with CI/CD automation via GitHub Actions. MongoDB Atlas is used as the primary data source.
